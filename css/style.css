@@ -98,3 +98,31 @@ hr {
     height: 1px;
     border:0;           /*테두리: 없음*/
 }
+
+/* media query */
+@media screen and (max-width: 360px) {
+    .hero_img {
+        width: 100%;
+    }
+    .hero_img img {
+        width: 100%;
+    }
+    .clips {
+        max-width: 300px; /*최대-너비 : 300px, 300px 미만 폭에서는 100% 크기*/
+        flex-direction: column; /*플렉스-방향: 컬럼(열,수직)*/
+    }
+.clip:nth-child(1) {     /*2개의 clip이 있음, 그 중 첫 번째*/
+            margin-right: 0px;
+        }
+    }
+    .hero_img {
+        height: auto; /*높이: 알아서 계산된 높이(자연스럽게)*/
+    }
+    hr {
+        margin: 30px 0 0 0;
+    }
+    .info {
+        background-color: #005891;
+        color: white;
+        padding: 50px;
+    }
