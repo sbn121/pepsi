@@ -1,0 +1,100 @@
+body {
+font-family: 'Hahmlet', serif;
+font-family: 'Noto Sans KR', sans-serif;}
+.logo { 
+    /* 인라인 요소 : 모든 정렬의 기준점은 화면의 왼쪽, 상단 */
+    width: 100px;
+    height: 110px;
+    margin: 50px auto;   
+}
+.menu {
+    background-color: #005891;
+    text-align: center;        /* div는 기본값  width 100%로 설계되어있음 */
+    height: 50px;
+    line-height: 50px;         /* 행-높이:50px */
+}
+.menu a { /*a는 파랑색, 밑줄 스타일을 태생적으로 갖음*/
+    color: white;
+    text-decoration: none;     /*텍스트-꾸밈 : 없음*/
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;         /*글자-두께 : 두껍게*/
+}
+.menu a :hover {               
+    color: #fcff00;
+}
+.hero_img {
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+}
+.title {
+    text-align: center;
+    margin: 40px 0;
+}
+.title h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.title p {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;       /* #555와 #555555는 같음*/
+}
+.clips {
+    width : 650px;
+    margin: 0 auto;
+    font-size: 0;        /*글자-크키 : 0 (글자마다 자동으로 생성되는 여백 x)*/
+    display: flex;       /*기본값: 가로로 나열해서 표현*/
+}
+.clip:nth-child(1) {     /*2개의 clip이 있음, 그 중 첫 번째*/
+    margin-right: 50px;
+}
+.clip h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.clip h2, .clip p{
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+}
+.social_media {
+    text-align: center;
+    margin: 40px 0;
+}
+.social_media a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+.social_media a:nth-child(4) {
+    margin-right: 0;
+}
+.contact, .info {
+    text-align: center;
+}
+.contact h2{
+    font-size: 15px;
+    color: #005891;;
+    text-transform: uppercase;    /*텍스트-변형:대문자로 <-> lowercase, capitalize:소문자로*/
+}
+.contact p{
+    font-weight: bold;
+    font-size: 30px;
+    color: #005891;
+}
+.info {margin-bottom: 50px;
+}
+.info p:nth-child(1) {
+    font-size: 13px;
+}
+.info p:nth-child(2) {
+    font-size: 11px;
+    margin-top: 10px;
+}
+hr {
+    background-color: #005891;
+    margin: 50px 0;
+    height: 1px;
+    border:0;           /*테두리: 없음*/
+}
