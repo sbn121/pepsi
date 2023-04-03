@@ -100,7 +100,7 @@ hr {
 }
 
 /* media query */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
     .hero_img {
         width: 100%;
     }
