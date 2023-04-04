@@ -46,6 +46,7 @@ font-family: 'Noto Sans KR', sans-serif;}
     margin: 0 auto;
     font-size: 0;        /*글자-크키 : 0 (글자마다 자동으로 생성되는 여백 x)*/
     display: flex;       /*기본값: 가로로 나열해서 표현*/
+    min-height: 300px;
 }
 .clip:nth-child(1) {     /*2개의 clip이 있음, 그 중 첫 번째*/
     margin-right: 50px;
@@ -59,6 +60,20 @@ font-family: 'Noto Sans KR', sans-serif;}
     margin: 20px 0;
     text-align: center;
 }
+.clip a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+.clip a :hover [
+    backgroung-color: #005891;
+    font-size : 14px;
+]
 .social_media {
     text-align: center;
     margin: 40px 0;
@@ -99,7 +114,7 @@ hr {
     border:0;           /*테두리: 없음*/
 }
 
-/* media query */
+/* media query : mobile style */
 @media screen and (max-width: 390px) {
     .hero_img {
         width: 100%;
@@ -111,9 +126,19 @@ hr {
         max-width: 300px; /*최대-너비 : 300px, 300px 미만 폭에서는 100% 크기*/
         flex-direction: column; /*플렉스-방향: 컬럼(열,수직)*/
     }
-.clip:nth-child(1) {     /*2개의 clip이 있음, 그 중 첫 번째*/
+    .clip {
+        min-height: 300px;
+        border: 1px solid rgb(238, 235, 235);
+    }
+    .clip:nth-child(1) {     /*2개의 clip이 있음, 그 중 첫 번째*/
             margin-right: 0px;
         }
+    }
+    .clip a{
+        display: block;
+        margin: 0 auto;
+        width: 70px;
+        text-align: center;
     }
     .hero_img {
         height: auto; /*높이: 알아서 계산된 높이(자연스럽게)*/
