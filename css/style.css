@@ -96,8 +96,8 @@ font-family: 'Noto Sans KR', sans-serif;}
     font-size: 30px;
     color: #005891;
 }
-.info {margin-bottom: 50px;
-}
+/* .info {margin-bottom: 50px;
+} */
 .info p:nth-child(1) {
     font-size: 13px;
 }
