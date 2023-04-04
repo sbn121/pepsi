@@ -20,7 +20,7 @@ font-family: 'Noto Sans KR', sans-serif;}
     font-size: 14px;
     font-weight: bold;         /*글자-두께 : 두껍게*/
 }
-.menu a :hover {               
+.menu a:hover {               
     color: #fcff00;
 }
 .hero_img {
