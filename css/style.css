@@ -94,7 +94,7 @@ font-family: 'Noto Sans KR', sans-serif;}
 }
 hr {
     background-color: #005891;
-    margin: 50px 0;
+    margin-top: 50px;
     height: 1px;
     border:0;           /*테두리: 없음*/
 }
