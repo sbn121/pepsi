@@ -67,13 +67,11 @@ font-family: 'Noto Sans KR', sans-serif;}
     background-color: gray;
     padding: 5px 10px;
     border-radius: 10px;
-
 }
-
-.clip a :hover [
-    backgroung-color: #005891;
+.clip a:hover {
+    background-color: #005891;
     font-size : 14px;
-]
+}
 .social_media {
     text-align: center;
     margin: 40px 0;
